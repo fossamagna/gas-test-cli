@@ -13,41 +13,39 @@ npm install gas-test-test --save-dev
 ## Usage
 
 1. Get Credentials for Google Apps Script Execution API.
-
-```sh
-$(npm bin)/gas-test auth <client_secret.json>
-```
-
+  ```sh
+  $(npm bin)/gas-test auth <client_secret.json>
+  ```
 2. Create settings file.
 
-gas-test.json:
-```
-{
-  "scriptId": "<YOUR_SCRIPT_ID_FOR_TEST>",
-  "scopes": ["https://www.googleapis.com/auth/drive"],
-  "resource": {
-    "function": "run",
-    "parameters": [],
-    "devMode": true
+  gas-test.json:
+  ```
+  {
+    "scriptId": "<YOUR_SCRIPT_ID_FOR_TEST>",
+    "scopes": ["https://www.googleapis.com/auth/drive"],
+    "resource": {
+      "function": "run",
+      "parameters": [],
+      "devMode": true
+    }
   }
-}
-```
+  ```
 
 3. Build test code.
 
-```sh
-$(npm bin)/gas-test build test/*.js -o built.js
-```
+  ```sh
+  $(npm bin)/gas-test build test/*.js -o built.js
+  ```
 
 4. Import test code via Google Drive API
 
-[gas-manager]() or [node-google-apps-script]() is useful in order to import script to project on Google.
+  [gas-manager](https://github.com/soundTricker/gas-manager) or [node-google-apps-script](https://github.com/danthareja/node-google-apps-script) is useful in order to import script to project on Google.
 
 5. Run test code using gas-test via Execution API.
 
-```sh
-$(npm bin)/gas-test run -c <path to credentials> -s <path to gas-test.json> -o <path to output>
-```
+  ```sh
+  $(npm bin)/gas-test run -c <path to credentials> -s <path to gas-test.json> -o <path to output>
+  ```
 
 ## License
 
