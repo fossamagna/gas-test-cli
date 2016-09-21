@@ -1,0 +1,35 @@
+{
+  "name": "gas-test-cli",
+  "version": "0.1.0",
+  "description": "Command Line Interface for gas-test",
+  "main": "index.js",
+  "bin": {
+    "gas-test": "bin/cli.js",
+    "gas-test-run": "bin/cli-run.js",
+    "gas-test-auth": "bin/cli-auth.js",
+    "gas-test-build": "bin/cli-build.js"
+  },
+  "scripts": {
+    "test": "eslint ."
+  },
+  "keywords": [
+    "gas-test",
+    "Google Apps Script"
+  ],
+  "author": "fossamagna <fossamagna2@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "babelify": "7.3.0",
+    "browserify": "13.1.0",
+    "commander": "2.9.0",
+    "deep-assign": "2.0.0",
+    "gasify": "0.1.0",
+    "googleapis": "12.4.0",
+    "stream-concat": "0.1.0",
+    "string-to-stream": "1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "3.5.0"
+  }
+}
