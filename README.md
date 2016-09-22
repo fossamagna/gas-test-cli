@@ -4,10 +4,10 @@
 
 ## Installation
 
-First, install gas-test using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install gas-test-cli using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```sh
-npm install gas-test-test --save-dev
+npm install gas-test-cli --save-dev
 ```
 
 ## Usage
@@ -22,12 +22,7 @@ npm install gas-test-test --save-dev
   ```
   {
     "scriptId": "<YOUR_SCRIPT_ID_FOR_TEST>",
-    "scopes": ["https://www.googleapis.com/auth/drive"],
-    "resource": {
-      "function": "run",
-      "parameters": [],
-      "devMode": true
-    }
+    "scopes": ["https://www.googleapis.com/auth/drive"]
   }
   ```
 
