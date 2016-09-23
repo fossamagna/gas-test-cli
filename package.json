@@ -23,7 +23,6 @@
     "babelify": "7.3.0",
     "browserify": "13.1.0",
     "commander": "2.9.0",
-    "deep-assign": "2.0.0",
     "gasify": "0.1.0",
     "googleapis": "12.4.0",
     "stream-concat": "0.1.0",
