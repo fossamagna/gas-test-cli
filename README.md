@@ -18,6 +18,8 @@ npm install gas-test-cli --save-dev
   ```
 2. Create settings file.
 
+  Note: Change to `scopes` values used by your test script.
+
   gas-test.json:
   ```
   {
