@@ -24,6 +24,7 @@
     "browserify": "13.1.0",
     "commander": "2.9.0",
     "gasify": "0.1.0",
+    "glob": "7.1.0",
     "googleapis": "12.4.0",
     "stream-concat": "0.1.0",
     "string-to-stream": "1.1.0"
