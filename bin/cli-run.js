@@ -10,6 +10,8 @@ program
   .option('-o, --output <path>', 'path to result file')
   .option('-s, --settings <path>', 'path to settins for test', './gas-test.json')
   .option('-c, --credentials <path>', 'path to credentials file', util.getDefaultCredentialPath())
+  .option('-r, --reporter <type>', 'type of reporter', 'json')
+  .option('-n, --suppress_console', 'no output to console')
   .parse(process.argv);
 
 util.readJsonFromFile(program.settings).then(settings => {
@@ -18,8 +20,8 @@ util.readJsonFromFile(program.settings).then(settings => {
     credentials: program.credentials
   };
   const test = new GasTest(options);
-  test.run().then(json => {
-    return Promise.all([writeToConsole(json), writeToFile(json)]);
+  test.run([program.reporter]).then(value => {
+    return Promise.all([writeToConsole(value), writeToFile(value)]);
   }).catch(e => {
     if (e) {
       console.error(e);
@@ -28,14 +30,20 @@ util.readJsonFromFile(program.settings).then(settings => {
   });
 });
 
-function writeToFile(json) {
+function writeToFile(value) {
   if (program.output) {
-    return util.writeToFile(program.output, json);
+    if (program.reporter === 'json') {
+      value = JSON.stringify(value);
+    }
+    return util.writeToFile(program.output, value);
   }
-  return Promise.resovle();
 }
 
 function writeToConsole(json) {
+  if (program.suppress_console) {
+    return;
+  }
+
   const writeError = error => {
     if (error.message) {
       console.log(`    ${colors.red(error.message)}`);
