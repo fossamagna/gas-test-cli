@@ -1,4 +1,4 @@
-# gas-test-cli
+# gas-test-cli [![NPM version][npm-image]][npm-url]  [![Build Status][travis-image]][travis-url]
 
 > CLI for [gas-test](https://github.com/fossamagna/gas-test)
 
@@ -47,3 +47,8 @@ npm install gas-test-cli --save-dev
 ## License
 
 Apache-2.0 © [fossamagna](https://github.com/fossamagna)
+
+[npm-image]: https://badge.fury.io/js/gas-test-cli.svg
+[npm-url]: https://npmjs.org/package/gas-test-cli
+[travis-image]: https://travis-ci.org/fossamagna/gas-test-cli.svg?branch=master
+[travis-url]: https://travis-ci.org/fossamagna/gas-testcli
