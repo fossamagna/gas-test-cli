@@ -51,4 +51,4 @@ Apache-2.0 © [fossamagna](https://github.com/fossamagna)
 [npm-image]: https://badge.fury.io/js/gas-test-cli.svg
 [npm-url]: https://npmjs.org/package/gas-test-cli
 [travis-image]: https://travis-ci.org/fossamagna/gas-test-cli.svg?branch=master
-[travis-url]: https://travis-ci.org/fossamagna/gas-testcli
+[travis-url]: https://travis-ci.org/fossamagna/gas-test-cli
