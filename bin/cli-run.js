@@ -71,10 +71,12 @@ function writeToConsole(json) {
     });
     const passing = colors.green(`${stats.passes} passing`);
     const duration = colors.gray(`(${stats.duration}ms)`);
-    const failing = colors.red(`${stats.failures} failing`);
     console.log('');
     console.log(`  ${passing} ${duration}`);
-    console.log(`  ${failing}`);
+    if (stats.failures) {
+      const failing = colors.red(`${stats.failures} failing`);
+      console.log(`  ${failing}`);
+    }
     stats.failures === 0 ? resolve(0) : reject();
   });
 }
