@@ -27,7 +27,7 @@
     "gasify": "0.1.2",
     "glob": "7.1.1",
     "googleapis": "23.0.1",
-    "stream-concat": "0.1.1",
+    "stream-concat": "0.2.0",
     "string-to-stream": "1.1.0"
   },
   "devDependencies": {
