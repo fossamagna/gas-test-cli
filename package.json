@@ -24,7 +24,7 @@
     "browserify": "15.0.0",
     "colors": "1.1.2",
     "commander": "2.13.0",
-    "gasify": "0.1.2",
+    "gasify": "1.0.0",
     "glob": "7.1.1",
     "googleapis": "23.0.1",
     "stream-concat": "0.1.1",
