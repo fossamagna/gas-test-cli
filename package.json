@@ -26,7 +26,7 @@
     "commander": "2.13.0",
     "gasify": "0.1.2",
     "glob": "7.1.1",
-    "googleapis": "23.0.1",
+    "googleapis": "39.2.0",
     "stream-concat": "0.1.1",
     "string-to-stream": "1.1.0"
   },
