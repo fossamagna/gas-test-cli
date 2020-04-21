@@ -49,6 +49,6 @@ glob(args[0], {}, function (er, files) {
     b.transform(babelify, {});
   }
   b.plugin(gasify, {})
-  .add(combinedStream)
-  .bundle().pipe(output);
+    .add(combinedStream)
+    .bundle().pipe(output);
 });
