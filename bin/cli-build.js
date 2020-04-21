@@ -9,7 +9,6 @@ const str = require('string-to-stream');
 const StreamConcat = require('stream-concat');
 const browserify = require('browserify');
 const gasify = require('gasify');
-const babelify = require('babelify');
 
 program
   .option('-o, --output <path>', 'path to output file')
@@ -46,6 +45,7 @@ glob(args[0], {}, function (er, files) {
 
   const b = browserify();
   if (program.babel) {
+    const babelify = require('babelify');
     b.transform(babelify, {});
   }
   b.plugin(gasify, {})
