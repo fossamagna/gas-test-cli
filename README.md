@@ -30,8 +30,12 @@ npm install gas-test-cli --save-dev
 
 3. Build test code.
 
+   Options:
+    - `-t`, `--typescript`: transpile with TypeScript
+    - `-b`, `--babel`: transpile with babel
+
   ```sh
-  $(npm bin)/gas-test build test/*.js -o built.js
+  $(npm bin)/gas-test --typescript build test/*.ts -o built.js
   ```
 
 4. Push test code via Google Apps Script API

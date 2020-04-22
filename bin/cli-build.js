@@ -13,6 +13,7 @@ const gasify = require('gasify');
 program
   .option('-o, --output <path>', 'path to output file')
   .option('-b, --babel', 'transpile with babel')
+  .option('-t, --typescript', 'transpile with typescript')
   .parse(process.argv);
 
 const args = program.args;
@@ -47,6 +48,10 @@ glob(args[0], {}, function (er, files) {
   if (program.babel) {
     const babelify = require('babelify');
     b.transform(babelify, {});
+  }
+  if (program.typescript) {
+    const tsify = require('tsify');
+    b.plugin(tsify);
   }
   b.plugin(gasify, {})
     .add(combinedStream)
