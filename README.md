@@ -36,9 +36,12 @@ npm install gas-test-cli --save-dev
   $(npm bin)/gas-test build test/*.js -o built.js
   ```
 
-4. Import test code via Google Drive API
+4. Push test code via Google Apps Script API
 
-  [gas-manager](https://github.com/soundTricker/gas-manager) or [node-google-apps-script](https://github.com/danthareja/node-google-apps-script) is useful in order to import script to project on Google.
+  ```sh
+  $ clasp push
+  ```
+  [clasp](https://github.com/google/clasp) is useful in order to push script to project on Google.
 
 5. Run test code using gas-test via Execution API.
 
