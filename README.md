@@ -1,7 +1,5 @@
 # gas-test-cli [![NPM version][npm-image]][npm-url]  [![Build Status][travis-image]][travis-url]
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/fossamagna/gas-test-cli.svg)](https://greenkeeper.io/)
-
 > CLI for [gas-test](https://github.com/fossamagna/gas-test)
 
 ## Installation
