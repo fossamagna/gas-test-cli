@@ -28,7 +28,7 @@
     "googleapis": "49.0.0",
     "stream-concat": "0.3.0",
     "string-to-stream": "3.0.1",
-    "tsify": "4.0.1"
+    "tsify": "4.0.2"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
