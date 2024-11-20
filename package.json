@@ -24,7 +24,7 @@
     "colors": "1.4.0",
     "commander": "5.1.0",
     "gasify": "1.0.0",
-    "glob": "7.1.6",
+    "glob": "7.2.3",
     "googleapis": "49.0.0",
     "stream-concat": "0.3.0",
     "string-to-stream": "3.0.1",
